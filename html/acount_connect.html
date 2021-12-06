@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+<style>
+    .don_hang_acc_con{display: block}
+    .dia_chi_acc_con{ display: none;}
+    .tai_khoan_acc_con{display: none}
+</style>
+  <body>
+
+    <div class="account_conected_pc">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="menu_account_connected col-sm-2 mt-5">
+                    <div id="donhang-btn" style="text-decoration: none; color: gray; cursor: pointer;"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 12px;"></i>  Đơn hàng</div>
+                    <hr>
+                    <div id="diachi-btn" style="text-decoration: none; color: gray; cursor: pointer;"><i class="fa fa-home" aria-hidden="true" style="font-size: 12px;"></i>  Địa chỉ</div>
+                    <hr>
+                    <div id="taikhoan-btn" style="text-decoration: none; color: gray; cursor: pointer;"><i class="fa fa-user" aria-hidden="true" style="font-size: 12px;"></i>  Tài Khoản</div>
+                    <hr>
+                    <a id="dangxuat-btn" href="account.html" style="text-decoration: none; color: gray;"><i class="fas fa-sign-in-alt" aria-hidden="true" style="font-size: 12px;"></i>  Đăng xuất</a>
+                    <hr>
+                </div>
+                <div class="col-sm-1 border-left border-secondary"></div>
+
+                <!-- ------------------------------------ -->
+                <div class="don_hang_acc_con col-sm-7 mt-5 mb-4 border bg-light p-3">
+                    <div class="row border-top bg-light p-3 justify-content-between" style="display: none;">
+                        <div class="col-6 col-sm-5">
+                            <i class="fa fa-check-circle text-secondary pt-1 mr-3" aria-hidden="true"></i>
+                            Bạn chưa có đơn nào
+                        </div>
+                        <div class="col-5 col-sm-4">
+                            <div class="btn btn-secondary">TÌM SẢN PHẨM</div>
+                        </div>
+                    </div>
+                    <!---------->
+                    <div class="hoadon">
+                        <div class="header-title row justify-content-around">
+                            <div class="col-7 col-sm-7">
+                                <h5 class="row">ĐH #123321</h5>
+                                <span class="row text-secondary">Địa chỉ giao: Trường Đại học Nông Lâm tpHCM</span>
+                                <span class="row text-secondary">Thời gian đặt hàng: 08:00 20/11/2021</span>
+                            </div>
+                            <div class="col-4 col-sm-4">
+                            <a class="btn btn-primary align-self-center text-white" data-toggle="collapse" data-target="#product-detail-more">Xem chi tiết</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div  id="product-detail-more" class="cart-bought">
+                            <div class="product-detail row justify-content-between mt-3">
+                                <div class="col-2 col-sm-3">
+                                    <img src="1634090902028.webp" alt="" class="img-fluid" style="max-height: 70px;">
+                                </div>
+                                <div class="col-7 col-sm-6 align-self-center">
+                                        Áo sơ mi nam SKDTK241 - Xanh lá, L
+                                        <br>
+                                        x1
+                                </div>
+                                <div class="col-2 col-sm-2 align-self-center">
+                                    399.000Đ
+                                    <strike>599.000Đ</strike>
+                                </div>
+                            </div>
+                            <div class="product-detail row justify-content-between mt-3">
+                                <div class="col-2 col-sm-3">
+                                    <img src="1634090902028.webp" alt="" class="img-fluid" style="max-height: 70px;">
+                                </div>
+                                <div class="col-7 col-sm-6 align-self-center">
+                                        Áo sơ mi nam SKDTK241 - Xanh lá, L
+                                        <br>
+                                        x1
+                                </div>
+                                <div class="col-2 col-sm-2 align-self-center">
+                                    399.000Đ
+                                    <strike>599.000Đ</strike>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-pay">
+                            <div class="row justify-content-end">
+                                <div class="col-7 col-sm-7">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6">Tiền hàng :</div>
+                                        <div class="col-1 col-sm-1">999.000Đ</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6">Tiền giảm giá :</div>
+                                        <div class="col-1 col-sm-1">-200.000Đ</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6">Phí giao hàng :</div>
+                                        <div class="col-1 col-sm-1">20.000Đ</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 col-sm-6">Tổng đơn hàng :</div>
+                                        <div class="col-1 col-sm-1">699.000Đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <disv class="col-6 col-sm-5">
+                                <a href="thanhtoan.html" class="buy-again btn btn-secondary mt-4 d-flex justify-content-center text-white">Mua lại đơn hàng này</a>
+                            </disv>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- -------------------------- -->
+                <div class="dia_chi_acc_con col-sm-7 mt-5">
+                    <h4>Địa chỉ giao hàng</h4>
+                    <div class="row mt-3 justify-content-between">
+                        <div class="col-7 col-sm-7">
+                            <label for="ho">Họ <span class="text-danger">*</span></label>
+                            <input type="text" name="ho" id="ho" style="width: 100%;">
+                        </div>
+                        <div class="col-5 col-sm-5">
+                            <label for="ten">Tên <span class="text-danger">*</span></label>
+                            <input type="text" name="ten" id="ten"  style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3 justify-content-between">
+                        <div class="col-7 col-sm-7">
+                            <label for="tinh">Tỉnh / Thành phố</label>
+                            <input type="text" name="tinh" id="tinh" style="width: 100%;">
+                        </div>
+                        <div class="col-5 col-sm-5">
+                            <label for="huyen">Huyện</label>
+                            <input type="text" name="huyen" id="huyen"  style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="diachi">Địa chỉ <span class="text-danger">*</span></span></label>
+                            <input type="text" name="diacchi" id="diachi" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="sdt">Số điện thoại<span class="text-danger">*</span></span></label>
+                            <input type="text" name="sdt" id="sdt" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="sdt">Số điện thoại<span class="text-danger">*</span></span></label>
+                            <input type="text" name="sdt" id="sdt" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="email">Email<span class="text-danger">*</span></span></label>
+                            <input type="text" name="email" id="email" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="mt-4 btn btn-dark">Lưu thông tin</div>
+                </div>
+
+                <!-- ----------------------------------- -->
+                <div class="tai_khoan_acc_con col-sm-7 mt-5 mb-4">
+                    <h4>Tài khoản</h4>
+                    <div class="row mt-3 justify-content-between">
+                        <div class="col-7 col-sm-7">
+                            <label for="ho">Họ <span class="text-danger">*</span></label>
+                            <input type="text" name="ho" id="ho" style="width: 100%;">
+                        </div>
+                        <div class="col-5 col-sm-5">
+                            <label for="ten">Tên <span class="text-danger">*</span></label>
+                            <input type="text" name="ten" id="ten"  style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="tenhienthi">Tên hiển thị<span class="text-danger">*</span></span></label>
+                            <input type="text" name="tenhienthi" id="tenhienthi" style="width: 100%;">
+                            <span style="font-style: italic; font-size: 12px;">Tên này sẽ hiển thị trong trang Tài khoản và phần Đánh giá sản phẩm</span>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="email">Email<span class="text-danger">*</span></span></label>
+                            <input type="text" name="email" id="email" style="width: 100%;">
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Thay đổi mật khẩu</h4>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="pw-present">Mật khẩu hiện tại (bỏ trống nếu không đổi)</label>
+                            <input type="text" name="pw-present" id="pw-present" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="new-pw">Mật khẩu mới (bỏ trống nếu không đổi)</label>
+                            <input type="text" name="new-pw" id="new-pw" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-sm-12">
+                            <label for="new-pw-repeat">Xác nhận mật khẩu mới</label>
+                            <input type="text" name="new-pw-repeat" id="new-pw-repeat" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="mt-4 btn btn-dark">Lưu thay đổi</div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <script>
+      //donhang
+      don_hang_acc_con = document.getElementsByClassName('don_hang_acc_con');
+      dia_chi_acc_con = document.getElementsByClassName('dia_chi_acc_con');
+      tai_khoan_acc_con = document.getElementsByClassName('tai_khoan_acc_con');
+
+      document.getElementById('donhang-btn').onclick = function(){
+          console.log(dia_chi_acc_con[0]);
+        don_hang_acc_con[0].style.display = "block";
+        dia_chi_acc_con[0].style.display = "none";
+        tai_khoan_acc_con[0].style.display = "none";
+      }
+      document.getElementById('diachi-btn').onclick = function(){
+          console.log('a');
+        don_hang_acc_con[0].style.display = "none";
+        dia_chi_acc_con[0].style.display = "block";
+        tai_khoan_acc_con[0].style.display = "none";
+      }
+      document.getElementById('taikhoan-btn').onclick = function(){
+          console.log('a');
+        don_hang_acc_con[0].style.display = "none";
+        dia_chi_acc_con[0].style.display = "none";
+        tai_khoan_acc_con[0].style.display = "block";
+      }
+
+  </script>
+</html>
