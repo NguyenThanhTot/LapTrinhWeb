@@ -39,7 +39,7 @@
                     <a href="account.html" class="fa fa-heart icon_menu_right" style="text-decoration: none;"></a>
                     <a href="account.html" class="fa fa-user icon_menu_right"></a>
                     <i class="fas fa-box cart-icon icon_menu_right"></i>
-                    <i class="fa fa-search icon_menu_right" aria-hidden="true"></i>
+                    <i class="fa fa-search search-icon icon_menu_right" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <a href="account.html" class="fa fa-heart icon_menu_right" style="text-decoration: none;"></a>
                     <a href="account.html" class="fa fa-user icon_menu_right"></a>
                     <i class="fas fa-box cart-icon icon_menu_right"></i>
-                    <i class="fa fa-search icon_menu_right"></i>
+                    <i class="fa fa-search search-icon icon_menu_right"></i>
                     <i class="fa fa-align-justify icon_menu_right" id="button_menulist_mobile_show"></i>
                 </div>
             </div>
@@ -294,6 +294,33 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>s
+
+    <!-- Giao diện khi click vào search button -->
+    <div class="search-right container-fluid"
+        style="position: fixed; left:0;top: 0;right:0;bottom:0;overflow-y:scroll; z-index: 10;">
+        <div class="row m-0" style="width: 100%;">
+            <div id="bg-close-search" class="col-4 col-sm-4 col-lg-8 p-0 bg-dark"
+                style="min-height: 100vh; opacity: 0.5;">
+            </div>
+            <div class="col-8 col-sm-8 col-lg-4 bg-white">
+                <div class="mb-5 mt-3 row justify-content-center">
+                    <div class="col-5 col-sm-5">
+                        <div class="pt-2 pb-2">TÌM KIẾM</div>
+                    </div>
+                    <div class="col-5 col-sm-5 align-self-center d-flex justify-content-end"
+                        id="button_search_close">
+                        <i class="fa fa-times" aria-hidden="true" style="font-size: 30px;"></i>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-around">
+                    <input type="text" class="form-control col-10 col-lg-10" name="search" id="search" aria-describedby="helpId"
+                        placeholder="Nội dung tìm kiếm">
+                    <div class="col-1 col-lg-1 m-0 p-0 pt-2"><i class="fa fa-search" aria-hidden="true" style="font-size: 20px; height: 100%; cursor: pointer;"></i></div>
+                </div>
+            </div>
+
         </div>
     </div>
 

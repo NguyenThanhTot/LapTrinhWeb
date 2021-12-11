@@ -65,6 +65,11 @@ a.menu-item:hover  .underline_menu-item{
     display: none;
     z-index: 7;
 }
+.search-right{
+    display: none;
+    z-index: 7;
+}
+
 
 @media (min-width: 780px) {
     #menu_header {
@@ -78,5 +83,12 @@ a.menu-item:hover  .underline_menu-item{
     .menulist_mobile {
         display: none;
     }
+}
 
+.fixed-menu-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
