@@ -1,5 +1,5 @@
 /* Xử lý hover khi di chuyển chuột vào sản phẩm */
-/* .image-product {
+.image-product {
     max-height: 250px;
     min-height: 250px;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-} */
+}
 
 .price-product {
     display: flex;
@@ -28,6 +28,18 @@
 }
 
 .price_pd_right:hover i.fa {
+    display: block;
+}
+
+.price_pd_right_like i.far {
+    display: none;
+}
+
+.price_pd_right_like:hover i.fa {
+    display: none;
+}
+
+.price_pd_right_like:hover i.far {
     display: block;
 }
 
