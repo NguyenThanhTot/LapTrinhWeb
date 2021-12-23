@@ -8,12 +8,6 @@
     padding: 0;
 }
 
-
-/* .container-fluid_2 {
-    margin: 0;
-    padding-top: 60px;
-} */
-
 .row {
     margin: 0px;
 }
@@ -109,37 +103,6 @@ a.menu-item:hover {
 /* # */
 
 
-/* #hotProduct h3,
-#newProduct h3 {
-    margin: 0px auto;
-    text-transform: uppercase;
-} */
-
-
-/* #hotProduct .row,
-#newProduct .row,
-footer {
-    margin: 5px 0;
-} */
-
-
-/* #hotProduct .row .hotProduct_item,
-#newProduct .row .newProduct_item {
-    margin: -5px 0;
-} */
-
-
-/* .row .product-info {
-    position: relative;
-    overflow: hidden;
-} */
-
-
-/* .container-fluid_2.row h4 {
-margin-top: 10px;
-} */
-
-
 /* xu lý the A MENU */
 
 #breadcrumbs {
@@ -223,100 +186,6 @@ h4 {
 .content_menu ul li:hover {
     padding: 17px;
 }
-
-
-/* end menu nhỏ */
-
-
-/* .product img {
-    width: 250px;
-    height: 300px;
-} */
-
-
-/* .row .product img:hover {
-    filter: opacity(80%);
-} */
-
-
-/* .row .product img {
-    display: block;
-} */
-
-
-/* .row .product-top a.buy-now {
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    background-color: rgb(29, 29, 54);
-    padding: 6px 0px;
-    position: absolute;
-    width: 89.1%;
-    color: rgb(247, 243, 243);
-    transition: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    opacity: 0.85;
-    margin: -35px 0px;
-    bottom: -50px;
-    display: none;
-} */
-
-
-/* .row .product-top:hover a.buy-now {
-    display: block;
-    opacity: 0.85;
-    bottom: 119px;
-} */
-
-
-/* .row .product-info {
-    padding: 10px 0px;
-} */
-
-
-/* .row .product-info a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-} */
-
-
-/* .row .product-info .product-price {
-    text-align: center;
-} */
-
-
-/* .row .product-info a.product-cat {
-    font-size: 11px;
-    text-transform: uppercase;
-    color: black;
-    padding: 0px;
-    font-weight: 600;
-} */
-
-
-/* .row .product-info a.product-name {
-    color: black;
-    padding: 0px;
-    text-transform: uppercase;
-} */
-
-
-/* xu ly FOOTER */
-
-#footer {
-    padding: 30px 0;
-    background-color: black;
-    color: blanchedalmond;
-}
-
-#footer .footer_chinhsach a {
-    color: blanchedalmond;
-    text-decoration: none;
-}
-
-
-/* # */
 
 
 /* xu ly phan LAYOUT IMAGE */
@@ -431,6 +300,109 @@ h4 {
     .btn_muangay {
         font-size: 12px;
     }
+}
+
+
+/* Xử lý css LIÊN HỆ  */
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 238, 247);
+}
+
+.container-fluid h1 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.form .form-contact {
+    background-color: white;
+    height: 400px;
+    width: 850px;
+    border-radius: 10px;
+}
+
+.form-contact h2 {
+    padding: 10px 20px;
+}
+
+.block-contact h2 {
+    padding: 10px 20px;
+}
+
+.form-contact span {
+    padding: 0px 20px;
+}
+
+.form-group {
+    padding: 10px 20px;
+}
+
+#form-input {
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: beige;
+    padding-left: 10px;
+}
+
+input[type=submit] {
+    background: transparent;
+    border: 0px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    background: #3d3b3b;
+    border-radius: 20px;
+    width: 100%;
+    color: rgb(241, 236, 225);
+    float: unset;
+}
+
+.form .block-contact {
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+
+.block-contact li {
+    list-style: none;
+    padding: 8px;
+}
+
+.block-contact li a {
+    text-decoration: none;
+    color: black;
+}
+
+.block-contact i {
+    padding-right: 10px;
+}
+
+
+/* Xử lý css HỆ THỐNG */
+.row {
+    margin: 30px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 238, 247);
+    /* display: flex; */
+}
+
+.block-contact li {
+    list-style: none;
+}
+
+h3 {
+    text-align: center;
 }
 
 
