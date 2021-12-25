@@ -11,34 +11,80 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- LINK FONT MENU font-family: 'Arima Madurai', cursive;-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/1_MyCSS.css"> -->
+    <!-- LINK FONT LOGO MENU font-family: 'Bungee Shade', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+    <!-- Link css for menu -->
     <link rel="stylesheet" href=".././my_css/menu.css">
-    <link rel="stylesheet" href=".././my_css/giohang.css">
+    
+
 </head>
 
+<style>
+    .image-news {
+        box-sizing: border-box;
+        /* background-image: none; */
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .news-item {
+        max-height: 140px;
+        min-height: 130px;
+    }
+
+    .content-news-mobile {
+        display: none;
+    }
+
+    .mystyle {
+        display: block;
+    }
+
+    .left-news-contents {
+        display: none;
+    }
+
+    @media (min-width: 992px) {
+        .news-left-mobile {
+            display: none;
+        }
+
+        .left-news-contents {
+            display: block;
+        }
+    }
+    @media (max-width: 768px) {
+        .news-item {
+        max-height: 100px;
+        /* min-height: 110px; */
+    }
+    }
+
+</style>
+
 <body>
+    <!------------------------------------- Start menu ------------------------------------->
     <!-- Menu pc -->
     <div id="menu_header" class="container-fluid pt-2 pb-2 menu_header">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-sm-1"><a href=""
+                <div class="col-sm-1"><a href="trang-chu.html"
                         style="font-family: 'Bungee Shade', cursive; color: #fff; font-size: 40px; text-decoration: none;">DTD</a>
                 </div>
                 <div class="col-sm-9 justify-content-end d-flex align-self-center pr-0">
-                    <a href="" class="menu-item pr-4"> Trang chủ<div class="underline_menu-item"></div></a>
-                    <a href="" class="menu-item pr-4">Nam<div class="underline_menu-item"></div></a>
-                    <a href="" class="menu-item pr-4">Nữ<div class="underline_menu-item"></div></a>
-                    <a href="" class="menu-item pr-4 ">Ưu đãi<div class="underline_menu-item"></div></a>
-                    <a href="" class="menu-item pr-4">Tin tức<div class="underline_menu-item"></div></a>
+                    <a href="trang-chu.html" class="menu-item pr-4"> Trang chủ<div class="underline_menu-item"></div></a>
+                    <a href="Nam.html" class="menu-item pr-4">Nam<div class="underline_menu-item"></div></a>
+                    <a href="Nu.html" class="menu-item pr-4">Nữ<div class="underline_menu-item"></div></a>
+                    <a href="uu-dai.html" class="menu-item pr-4 ">Ưu đãi<div class="underline_menu-item"></div></a>
+                    <a href="bang-tin.html" class="menu-item pr-4">Tin tức<div class="underline_menu-item"></div></a>
                 </div>
                 <div class="col-sm-2 align-self-center  d-flex justify-content-end p-0">
-                    <a href="account.html" class="fa fa-heart icon_menu_right" style="text-decoration: none;"></a>
-                    <a href="account.html" class="fa fa-user icon_menu_right"></a>
+                    <a href="dang-nhap.html" class="fa fa-heart icon_menu_right" style="text-decoration: none;"></a>
+                    <a href="dang-nhap.html" class="fa fa-user icon_menu_right"></a>
                     <i class="fas fa-box cart-icon icon_menu_right"></i>
                     <i class="fa fa-search search-icon icon_menu_right" aria-hidden="true"></i>
                 </div>
@@ -54,8 +100,8 @@
                         style="font-family: 'Bungee Shade', cursive; color: #fff; font-size: 40px; text-decoration: none;">DTD</a>
                 </div>
                 <div class="col-2 align-self-center d-flex justify-content-end">
-                    <a href="account.html" class="fa fa-heart icon_menu_right" style="text-decoration: none;"></a>
-                    <a href="account.html" class="fa fa-user icon_menu_right"></a>
+                    <a href="dang-nhap.html" class="fa fa-heart icon_menu_right" style="text-decoration: none;"></a>
+                    <a href="dang-nhap.html" class="fa fa-user icon_menu_right"></a>
                     <i class="fas fa-box cart-icon icon_menu_right"></i>
                     <i class="fa fa-search search-icon icon_menu_right"></i>
                     <i class="fa fa-align-justify icon_menu_right" id="button_menulist_mobile_show"></i>
@@ -283,13 +329,13 @@
                 <div class="mt-3 mb-4 row justify-content-center">
                     <div class="col-6 col-sm-5 d-flex justify-content-start">
                         <div class="pt-2 pb-2 btn btn-dark">
-                            <a href="giohang.html" style="text-decoration: none; color: #fff; font-size: 12px;">XEM GIỎ
+                            <a href="gio-hang.html" style="text-decoration: none; color: #fff; font-size: 12px;">XEM GIỎ
                                 HÀNG</a>
                         </div>
                     </div>
                     <div class="col-6 col-sm-5 d-flex justify-content-end">
                         <div class="pt-2 pb-2 btn btn-dark">
-                            <a href="thanhtoan.html" style="text-decoration: none; color: #fff; font-size: 12px;">THANH
+                            <a href="thanh-toan.html" style="text-decoration: none; color: #fff; font-size: 12px;">THANH
                                 TOÁN</a>
                         </div>
                     </div>
@@ -321,144 +367,164 @@
                     <div class="col-1 col-lg-1 m-0 p-0 pt-2"><i class="fa fa-search" aria-hidden="true" style="font-size: 20px; height: 100%; cursor: pointer;"></i></div>
                 </div>
             </div>
-
         </div>
     </div>
+    <!------------------------------------- End menu ------------------------------------->
 
-    <div class="container mb-4 bg-light p-2 mt-4">
-        <a href="" class="home-icon text-dark"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <span>/</span>
-        <a href="" class="category-present text-dark" style="font-weight: 500; text-decoration: none;">Giỏ hàng</a>
 
-    </div>
-
-    <!-- Table detail don hang -->
-    <div class="container-fluid">
-        <div class="container pb-5">
-
-            <div class="table-cart-pc">
-                <div class="menu-cart">
-                    <div class="row pt-2 pb-2 bg-dark text-light">
-                        <div class="image-product col-sm-2"></div>
-                        <div class="col-sm-3 d-flex justify-content-center">Sản phẩm</div>
-                        <div class="col-sm-2 d-flex justify-content-center">Giá</div>
-                        <div class="col-sm-2 d-flex justify-content-center">Số lượng</div>
-                        <div class="col-sm-2 d-flex justify-content-center">Tạm tính</div>
-                    </div>
-                </div>
-                <div class="product_detail ">
-                    <div class="row border border-top-0 border-secondary">
-                        <div class="col-sm-2 pt-4 pb-4 d-flex justify-content-end">
-                            <img src="../img/Img_Nam/Asomi/aosomi1.png" alt="" class="img-fluid" style="max-height: 100px;">
-                        </div>
-                        <div class="col-sm-3 align-self-center d-flex justify-content-center">
-                            Áo nỉ nam ANTTK203 - Trắng, M
-                        </div>
-                        <div class="col-sm-2 align-self-center d-flex justify-content-center">
-                            399.000Đ
-                        </div>
-                        <div class="col-sm-2 align-self-center d-flex justify-content-center">
-                            <input type="number" value="1" maxlength="2" style="width: 40%;">
-                        </div>
-                        <div class="col-sm-2 align-self-center d-flex justify-content-center">
-                            399.0000Đ
-                        </div>
-                        <div class="col-sm-1 align-self-center">
-                            <i class="fa fa-times-circle " aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="row border border-top-0 border-secondary">
-                        <div class="col-sm-2 pt-4 pb-4 d-flex justify-content-end">
-                            <img src="../img/Img_Nam/Asomi/aosomi11.png" alt="" class="img-fluid" style="max-height: 100px;">
-                        </div>
-                        <div class="col-sm-3 align-self-center d-flex justify-content-center">
-                            Áo nỉ nam ANTTK203 - Trắng, M
-                        </div>
-                        <div class="col-sm-2 align-self-center d-flex justify-content-center">
-                            399.000Đ
-                        </div>
-                        <div class="col-sm-2 align-self-center d-flex justify-content-center">
-                            <input type="number" value="1" maxlength="2" style="width: 40%;">
-                        </div>
-                        <div class="col-sm-2 align-self-center d-flex justify-content-center">
-                            399.0000Đ
-                        </div>
-                        <div class="col-sm-1 align-self-center">
-                            <i class="fa fa-times-circle " aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="table-cart-mobile container mt-4">
-                <div class="product-row">
-                    <div class="title-product-row row bg-dark text-white pt-2 pb-2">
-                        <i class="fa fa-times mr-3 ml-3 align-self-center" aria-hidden="true"></i>
-                        Áo nỉ nam ANTTK203 - Trắng, M
-                    </div>
-                    <div class="row justify-content-between border border-top-0">
-                        <div class="col-3 m-3 p-0">
-                            <img src="../img/Img_Nam/Asomi/aosomi1.png" alt="" class="img-fluid" style="max-height: 100px;">
-                        </div>
-                        <div class="col-4 align-self-center p-0">
-                            <input type="number" value="1" maxlength="2" style="width:25%;">
-                            <div class="price" style="font-size: 14px;">399.0000D <span>x1</span></div>
-                            <div class="price-total" style="font-size: 14px;">399.0000D</span></div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-row">
-                    <div class="title-product-row row bg-dark text-white pt-2 pb-2">
-                        <i class="fa fa-times mr-3 ml-3 align-self-center" aria-hidden="true"></i>
-                        Áo nỉ nam ANTTK203 - Trắng, M
-                    </div>
-                    <div class="row justify-content-between border border-top-0">
-                        <div class="col-3 m-3 p-0">
-                            <img src="../img/Img_Nam/Asomi/aosomi11.png" alt="" class="img-fluid" style="max-height: 100px;">
-                        </div>
-                        <div class="col-4 align-self-center p-0">
-                            <input type="number" value="1" maxlength="2" style="width:30%;">
-                            <div class="price" style="font-size: 14px;">399.0000D <span>x1</span></div>
-                            <div class="price-total" style="font-size: 14px;">399.0000D</span></div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="update mt-4 mb-3 container">
-                <div class="row justify-content-end">
-                    <div class="btn btn-primary col-5">Cập nhật giỏ hàng</div>
-                </div>
-            </div>
-            <div class="in4_ship">
-                Phí ship sẽ được tính theo từng địa chỉ , hỗ trợ ship trên hoá đơn trên 500K, tối thiểu 20K
-            </div>
-            <div class="payment">
-                <div class="row justify-content-end">
-                    <div class="col col-md-4">
-                        <h4>Cộng giỏ hàng</h4>
-                        <div class="row tamtinh">
-                            <div class="col-6 col-sm-6">
-                                <h6>Tạm tính</h6>
+    <div class="container-fluid news_PC mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-4 left-news-contents">
+                    <div style="padding: 10px 15px; border: gray 1px solid;">
+                        <h5 class="d-flex justify-content-center">
+                            BÀI VIẾT MỚI NHẤT
+                        </h5>
+                        <hr style="color: black; border: 1px black solid;">
+                        <div class="row mt-3" style="max-height: 100px; min-height: 90px;">
+                            <div class="col-sm-4  image-news pr-0">
+                            <img src="../img/News/thumb (1).jpg" alt="" class="img-fluid">
                             </div>
-                            <div class="col-6 col-sm-6"> 399.000Đ</div>
-                        </div>
-                        <div class="row tamtinh">
-                            <div class="col-6 col-sm-6">
-                                <h6>Tổng</h6>
+                            <div class="col-sm-8 pr-0">
+                                <a href="bang-tin-chi-tiet.html" style="font-size: 13px; text-decoration: none; color: #000;">BLACK FRIDAY –
+                                    SALE SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                                <p style="font-size: 12px; font-style: italic;">23/11/2021</p>
                             </div>
-                            <div class="col-6 col-sm-6">399.000Đ</div>
                         </div>
-                        <div class="mt-4 btn btn-dark d-flex justify-content-center">
-                            <a href="thanhtoan.html" class="text-white" style="text-decoration: none;">TIẾN HÀNH THANH
-                                TOÁN</a>
+                        <div class="row mt-3" style="max-height: 100px; min-height: 90px;">
+                            <div class="col-sm-4  image-news pr-0">
+                            <img src="../img/News/thumb (2).jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8 pr-0">
+                                <a href="bang-tin-chi-tiet.html" style="font-size: 13px; text-decoration: none; color: #000;">BLACK FRIDAY –
+                                    SALE SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                                <p style="font-size: 12px; font-style: italic;">23/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3" style="max-height: 100px; min-height: 90px;">
+                            <div class="col-sm-4  image-news pr-0">
+                            <img src="../img/News/thumb (3).jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-sm-8 pr-0">
+                                <a href="bang-tin-chi-tiet.html" style="font-size: 13px; text-decoration: none; color: #000;">BLACK FRIDAY –
+                                    SALE SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                                <p style="font-size: 12px; font-style: italic;">23/11/2021</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <!-- --------------------------- -->
+                <div class="col-12 col-lg-8">
+                    <h3 class="d-flex justify-content-center">TẤT CẢ BÀI VIẾT</h3>
+                    <hr>
+                    <div class="row mt-4 news-items justify-content-center">
+                        <div class="col-4 col-sm-3 p-0 image-news">
+                            <img src="../img/News/thumb (1).jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-sm-8 pr-0">
+                            <a href="bang-tin-chi-tiet.html" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
+                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
+                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
+                                mức...</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4 news-items justify-content-center">
+                        <div class="col-4 col-sm-3 p-0 image-news">
+                            <img src="../img/News/thumb (2).jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-sm-8 pr-0">
+                            <a href="bang-tin-chi-tiet.html" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
+                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
+                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
+                                mức...</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4 news-items justify-content-center">
+                        <div class="col-4 col-sm-3 p-0 image-news">
+                            <img src="../img/News/thumb (3).jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-sm-8 pr-0">
+                            <a href="bang-tin-chi-tiet.html" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
+                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
+                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
+                                mức...</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4 news-items justify-content-center">
+                        <div class="col-4 col-sm-3 p-0 image-news">
+                            <img src="../img/News/thumb (4).png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-sm-8 pr-0">
+                            <a href="bang-tin-chi-tiet.html" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
+                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
+                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
+                                mức...</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4 news-items justify-content-center">
+                        <div class="col-4 col-sm-3 p-0 image-news">
+                            <img src="../img/News/thumb (5).png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8 col-sm-8 pr-0">
+                            <a href="bang-tin-chi-tiet.html" style="text-decoration: none; color: black; font-size: 15px;">BLACK FRIDAY – SALE
+                                SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                            <p style="font-size: 12px; font-style: italic; margin-bottom: 0;">23/11/2021</p>
+                            <p style="font-size: 14px;">Cơ hội mua sắm không cần nhìn giá có 1-0-2 đã chính thức bắt đầu. Hàng ngàn sản phẩm với
+                                mức...</p>
+                        </div>
+                    </div>
+                    
+
+
+                    <div class="row page_division mt-4">
+                        <ul style="list-style: none;">
+                            <li style="display: inline; margin-right: 10px;"><a href="">1</a></li>
+                            <li style="display: inline; margin-right: 10px;"><a href="">2</a></li>
+                            <li style="display: inline; margin-right: 10px;"><a href="">3</a></li>
+                            <li style="display: inline; margin-right: 10px;"><a href="">4</a></li>
+                            <li style="display: inline; margin-right: 10px;"><a href="">5</a></li>
+                            <li style="display: inline; margin-right: 10px;"><a href="">>></a></li>
+                            <li style="display: inline; margin-right: 10px;"><a href="">Last</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ----------------- -->
+                <div class="col-12 mb-5 news-left-mobile" style="padding: 10px 15px; border: gray 1px solid;">
+                    <div class="head-news d-flex justify-content-center" style="cursor: pointer;">
+                        <h5 class="">BÀI VIẾT MỚI NHẤT
+                            <i class="fa fa-angle-double-down ml-3" aria-hidden="true"></i>
+                        </h5>
+                    </div>
+                    <div class="content-news-mobile">
+                        <div class="row mt-4">
+                            <div class="col-4 p-0">
+                                <img src="./img/News/thumb (1).jpg" alt="" class="img-fluid align-self-center">
+                            </div>
+                            <div class="col-8 pr-0">
+                                <a href="" style="text-decoration: none; color: black; font-size: 14px;">BLACK FRIDAY –
+                                    SALE SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                                <p style="font-size: 12px; font-style: italic;">23/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-4 p-0">
+                                <img src="./img/News/thumb (1).jpg" alt="" class="img-fluid align-self-center">
+                            </div>
+                            <div class="col-8 pr-0">
+                                <a href="" style="text-decoration: none; color: black; font-size: 14px;">BLACK FRIDAY –
+                                    SALE SẬP SÀN HÀNG NGÀN ƯU ĐÃI LÊN ĐẾN 70%</a>
+                                <p style="font-size: 12px; font-style: italic;">23/11/2021</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- ---------- -->
             </div>
         </div>
     </div>
@@ -484,11 +550,11 @@
                         style="font-size: 14px; font-weight: 500;font-family: 'Arima Madurai', cursive; color: #fff;">
                         GIỚI THIỆU VỀ
                         DTD</div>
-                    <div class="mt-1"><a href="" style="text-decoration: none; color:gray; font-size: 14px;">Giới thiệu
+                    <div class="mt-1"><a href="gioi-thieu.html" style="text-decoration: none; color:gray; font-size: 14px;">Giới thiệu
                             DTD</a></div>
-                    <div class="mt-2"><a href="" style="text-decoration: none; color:gray; font-size: 14px;">Hệ thống
+                    <div class="mt-2"><a href="chi-nhanh.html" style="text-decoration: none; color:gray; font-size: 14px;">Hệ thống
                             cửa hàng</a></div>
-                    <div class="mt-2"><a href="" style="text-decoration: none; color:gray; font-size: 14px;">Liên hệ</a>
+                    <div class="mt-2"><a href="lien-he.html" style="text-decoration: none; color:gray; font-size: 14px;">Liên hệ</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3">
@@ -496,11 +562,11 @@
                         style="font-size: 14px; font-weight: 500;font-family: 'Arima Madurai', cursive;  color: #fff;">
                         HỖ TRỢ KHÁCH
                         HÀNG</div>
-                    <div class="mt-1"><a href="" style="text-decoration: none; color:gray; font-size: 14px;">Hướng dẫn
+                    <div class="mt-1"><a href="size.html" style="text-decoration: none; color:gray; font-size: 14px;">Hướng dẫn
                             chọn kích cỡ</a></div>
-                    <div class="mt-2"><a href="" style="text-decoration: none; color:gray; font-size: 14px;">Chính sách
+                    <div class="mt-2"><a href="van-chuyen.html" style="text-decoration: none; color:gray; font-size: 14px;">Chính sách
                             vận chuyển</a></div>
-                    <div class="mt-2"><a href="" style="text-decoration: none; color:gray; font-size: 14px;">Chính sách
+                    <div class="mt-2"><a href="doi-tra.html" style="text-decoration: none; color:gray; font-size: 14px;">Chính sách
                             đổi trả</a></div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 col-lg-3">
@@ -518,6 +584,10 @@
         </div>
     </footer>
 
+    <script>
+        document.querySelector('.head-news').addEventListener('click', () => { document.querySelector('.content-news-mobile').classList.toggle('mystyle'); });
+    </script>
+    <script src="../my_js/menu.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -530,7 +600,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

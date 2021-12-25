@@ -13,7 +13,7 @@
     }
 
     .table-cart-mobile {
-        display: content;
+        display: block;
     }
 
     .table-cart-pc {
@@ -22,7 +22,7 @@
 
     @media (min-width: 765px) {
         .table-cart-pc {
-            display: contents;
+            display: block;
         }
 
         .table-cart-mobile {
