@@ -3,11 +3,6 @@
     margin: 0;
 }
 
-.container-fluid {
-    margin: 0;
-    padding: 0;
-}
-
 .row {
     margin: 0px;
 }
@@ -16,63 +11,8 @@ body {
     background-color: rgb(247, 244, 244);
 }
 
-
-/* hiệu ứng hình menu  */
-
-.page-block3 .page-block3-heading {
-    font-weight: 700;
-    text-align: center;
-    font-size: 20px;
-}
-
-.page-block3 .row picture img {
-    margin-left: 30%;
-    margin-top: 30px;
-}
-
-.container .container-heading {
-    font-weight: 700;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 30px;
-}
-
-
-/* # */
-
-
-/* xu ly REPONSIVE */
-
 *:focus {
     outline: none;
-}
-
-.search_input {
-    height: 35px;
-    padding-left: 10px;
-    border: auto;
-    border-radius: 50px;
-    border: 1px solid #d7e0e4;
-}
-
-.search_input input {
-    padding-top: 3px;
-    width: 95%;
-    border: none
-}
-
-a.menu-item {
-    text-decoration: none;
-    color: rgb(90, 90, 90);
-    text-transform: uppercase;
-}
-
-a.menu-item:hover {
-    color: rgb(0, 42, 66);
-}
-
-#header {
-    display: none;
 }
 
 #header-mobile {
@@ -83,112 +23,8 @@ a.menu-item:hover {
     visibility: hidden;
 }
 
-.cart-right {
-    visibility: hidden;
-}
 
-@media (min-width: 765px) {
-    #header {
-        display: contents;
-    }
-    #header-mobile {
-        display: none;
-    }
-    .menulist_mobile {
-        display: none;
-    }
-}
-
-
-/* # */
-
-
-/* xu lý the A MENU */
-
-#breadcrumbs {
-    padding-left: 140px;
-}
-
-h4 {
-    padding-left: 18px;
-}
-
-#breadcrumbs span a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: rgb(94, 92, 92);
-    text-decoration: none;
-}
-
-#breadcrumbs i {
-    color: rgb(94, 92, 92);
-    font-size: 10px;
-}
-
-#breadcrumbs span a:hover {
-    color: blue;
-}
-
-
-/* # */
-
-
-/* Menu NHỎ (chua hoàn chỉnh) */
-
-#page a {
-    text-decoration: none;
-}
-
-.content_menu span a {
-    font-size: 15px;
-    color: black;
-}
-
-.content_menu {
-    width: 1000px;
-    margin: auto;
-    padding-left: 150px;
-}
-
-.content_menu nav ul li {
-    list-style-type: none;
-}
-
-.content_menu .nav ul li {
-    list-style-type: none;
-    float: left;
-    padding: 13px 50px;
-}
-
-.content_menu ul li {
-    float: left;
-    clear: right;
-    padding: 17px;
-    font-weight: 600;
-    font-size: 100%;
-}
-
-.content_menu ul li:hover a {
-    color: blue;
-}
-
-.content_menu li ul {
-    display: none;
-    position: absolute;
-    margin-left: -17px;
-    margin-top: 19px;
-}
-
-.content_menu ul li:hover ul {
-    display: block;
-}
-
-.content_menu ul li:hover {
-    padding: 17px;
-}
-
-
-/* xu ly phan LAYOUT IMAGE */
+/*SANPHAM*/
 
 .image-product {
     max-height: 250px;
@@ -302,107 +138,44 @@ h4 {
     }
 }
 
-
-/* Xử lý css LIÊN HỆ  */
-
-.container-fluid {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(247, 238, 247);
-}
-
-.container-fluid h1 {
+.container span {
     text-align: center;
-    font-size: 36px;
-    padding-top: 10px;
 }
 
-.row {
-    display: flex;
+.page-block3 .page-block3-heading {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
 }
 
-.form .form-contact {
-    background-color: white;
-    height: 400px;
-    width: 850px;
-    border-radius: 10px;
+.page-block3 .row picture img {
+    margin-left: 15%;
+    margin-top: 30px;
 }
 
-.form-contact h2 {
-    padding: 10px 20px;
+.container .container-heading {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
-.block-contact h2 {
-    padding: 10px 20px;
+
+/*Thẻ a trong các menucon*/
+
+.breadcrumbs {
+    margin-top: 20px;
 }
 
-.form-contact span {
-    padding: 0px 20px;
-}
-
-.form-group {
-    padding: 10px 20px;
-}
-
-#form-input {
-    height: 40px;
-    width: 100%;
-    border-radius: 10px;
-    border-color: beige;
-    padding-left: 10px;
-}
-
-input[type=submit] {
-    background: transparent;
-    border: 0px;
-    text-transform: uppercase;
-    padding: 10px 10px;
-    background: #3d3b3b;
-    border-radius: 20px;
-    width: 100%;
-    color: rgb(241, 236, 225);
-    float: unset;
-}
-
-.form .block-contact {
-    background-color: white;
-    height: 400px;
-    width: 600px;
-    border-radius: 10px;
-    padding-left: 50px;
-}
-
-.block-contact li {
-    list-style: none;
-    padding: 8px;
-}
-
-.block-contact li a {
-    text-decoration: none;
+.breadcrumbs a {
     color: black;
-}
-
-.block-contact i {
-    padding-right: 10px;
 }
 
 
 /* Xử lý css HỆ THỐNG */
-.row {
-    margin: 30px;
-    padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(247, 238, 247);
-    /* display: flex; */
-}
 
-.block-contact li {
+.container .block-contact li {
     list-style: none;
-}
-
-h3 {
-    text-align: center;
 }
 
 
