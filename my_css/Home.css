@@ -69,3 +69,5 @@ input#email_register_take_news:focus {
 input#email_register_take_news::placeholder {
     color: rgb(223, 223, 223);
 }
+
+#carouselExampleIndicators{z-index: 1;}

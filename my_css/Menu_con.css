@@ -1,14 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-.row {
-    margin: 0px;
-}
-
-body {
-    background-color: rgb(247, 244, 244);
-}
 #menu_chilren_NAMNU ul {
     list-style: none;
     justify-content: center;
