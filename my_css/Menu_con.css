@@ -33,3 +33,9 @@
         font-size: 13px;
     }
 }
+.img_hot_gatori{
+    transition: 0.3s;
+}
+.img_hot_gatori:hover{
+transform: scale(1.1);
+}
